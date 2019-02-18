@@ -168,12 +168,14 @@ ul.navbar li {
 	background-color: #800000;
 }
 
-.link-text {
-	color: #088ca5;
-	margin: 0px;
+.links {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+.links p {
+	flex-basis: 50%;
 }
 
 @media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
