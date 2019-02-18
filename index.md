@@ -23,6 +23,8 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
+<img src="images/Emoticons/cool.png" alt="hi" class="inline"/>
+![Image](https://pp.userapi.com/c849136/v849136965/e90fc/uVr8VeVfBIA.jpg)
 [Link](url) and ![https://pp.userapi.com/c849136/v849136965/e90fc/uVr8VeVfBIA.jpg](src)
 ```
 
