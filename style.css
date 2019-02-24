@@ -188,29 +188,7 @@ ul.navbar li {
 	justify-content: center;
 }
 
-@keyframes disappearing {
-  0% { 
-    opacity: 0.0;
-  }
 
-  50% { 
-    opacity: 1.0;
-  }
-
-  100% { 
-    opacity: 0.0;
-  }
-}
-
-@keyframes rotation {
-  0% { 
-    transform: rotate(0deg);
-  }
-
-  100% { 
-    transform: rotate(360deg);
-  }
-}
 
 @media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
 	
