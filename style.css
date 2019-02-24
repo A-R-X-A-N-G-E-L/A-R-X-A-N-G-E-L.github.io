@@ -56,6 +56,19 @@ ul.navbar li {
 	margin-right: 0px;
 }
 
+.nav-item-main {
+	display: inline-block;
+	color: inherit;
+	transition: color 0.5s;
+	animation-duration: 3s;
+  	animation-name: rotation;
+  	animation-iteration-count: infinite;
+}
+
+.nav-item-main:hover {
+	color: blue;
+}
+
 .nav-item {
 	display: inline-block;
 	color: inherit;
@@ -77,6 +90,9 @@ ul.navbar li {
 	opacity: 0.5;
 	color: white;
 	transition: color 0.5s;
+	animation-duration: 3s;
+  	animation-name: disappearing;
+  	animation-iteration-count: infinite;
 }
 
 .subtitle:hover {
@@ -171,6 +187,32 @@ ul.navbar li {
 .links {
 	justify-content: center;
 }
+
+@keyframes rotation {
+  0% { 
+    opacity: 0.0;
+  }
+
+  50% { 
+    opacity: 1.0;
+  }
+
+  100% { 
+    opacity: 0.0;
+  }
+}
+
+
+@keyframes disappearing {
+  0% { 
+    transform: rotate(0deg);
+  }
+
+  100% { 
+    transform: rotate(360deg);
+  }
+}
+
 
 @media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
 	
