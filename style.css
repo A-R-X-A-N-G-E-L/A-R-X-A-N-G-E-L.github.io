@@ -69,6 +69,16 @@ ul.navbar li {
 	color: blue;
 }
 
+.nav-item-main-no-anim {
+	display: inline-block;
+	color: inherit;
+	transition: color 0.5s;
+}
+
+.nav-item-main-no-anim:hover {
+	color: blue;
+}
+
 .nav-item {
 	display: inline-block;
 	color: inherit;
@@ -176,16 +186,49 @@ ul.navbar li {
 }
 
 .menu-img:hover {
-	transform: rotate(360deg);	
-	width: 25px;
+	transform: rotate(360deg);		
 }
 
 .nav-icon:hover {
-	background-color: #800000;
+	background: #800000;		
 }
 
 .links {
 	justify-content: center;
+}
+
+.dropdown-menu {	
+	padding: 0px;
+	border-bottom: 5px solid #800000;;
+}
+
+.menu-content {
+	max-height: 0;
+	overflow: hidden; 
+	transition: 2s;
+}
+
+.dropdown-menu ul {
+	list-style: none;
+	padding: 0;
+}
+
+.dropdown-menu a { 
+	display: block;
+	padding: 10px;
+}
+
+.dropdown-menu label {
+	display: block;
+	cursor: pointer;
+}
+
+input#menu {
+	display: none;
+}
+
+input:checked ~ .menu-content {
+    max-height: 100px;
 }
 
 @keyframes disappearing {
