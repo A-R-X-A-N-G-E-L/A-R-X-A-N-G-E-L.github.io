@@ -1,0 +1,104 @@
+.neon-header {
+	background: #000000;
+}
+
+.neon-header-link {
+	text-shadow: 0 0 1em red, 0 0 1em red, 0 0 1em red;
+	color: rgb(194, 153, 255);
+}
+
+.neon-header-link:hover {
+	color: rgb(204, 122, 0);
+}
+
+.neon-header-static {
+	text-shadow: 0 0 1em red, 0 0 1em red, 0 0 1em red;
+	color: rgb(194, 153, 255);
+}
+
+.neon-banner {
+	box-shadow:  0 0 3em red, inset 0 0 3em red, 0 0 20em 10px rgb(204, 0, 204), 0 0 4em 10px rgb(204, 0, 204), inset 0 0 10em rgb(204, 0, 204);
+	background: rgba(0, 0, 0, 0.9);
+}
+
+.neon-banner-link {
+	text-shadow: 0 0 1em red, 0 0 1em red, 0 0 1em red;
+	color: rgb(194, 153, 255);
+}
+
+.neon-banner-link:hover {
+	color: rgb(204, 122, 0);
+}
+
+.neon-banner-static {
+	text-shadow: 0 0 1em red, 0 0 1em red, 0 0 1em red;
+	color: rgb(194, 153, 255);
+}
+
+.neon-subbanner {
+	background: #000000;
+	box-shadow: inset 0 0 3em red, inset 0 0 10em rgb(204, 0, 204);
+	text-shadow: 0 0 2em red, 0 0 2em red, 0 0 2em red;
+	color: rgba(194, 153, 255, 0.6);
+}
+
+.neon-link-box {
+	background: rgb(57, 0, 77);
+	box-shadow: inset 0 0 3em red, inset 0 0 10em rgb(204, 0, 204);
+}
+
+.neon-item-link {
+	background: rgb(0, 0, 26);
+	box-shadow: inset 0 0 3em red, inset 0 0 10em rgb(204, 0, 204);
+}
+
+.neon-text {
+	background: black;
+	text-shadow: 0 0 1em red, 0 0 1em red, 0 0 1em red;
+	box-shadow: inset 5em 5em 2em -5em red, inset 5em 5em 10em -5em rgb(204, 0, 204), inset -5em 5em 2em -5em red, inset -5em 5em 10em -5em rgb(204, 0, 204);
+	color: rgb(194, 153, 255);
+}
+
+.neon-text-linker {
+	background: black;
+	text-shadow: 0 0 1em red, 0 0 1em red, 0 0 1em red;
+	box-shadow: inset 5em -5em 2em -5em red, inset 5em -5em 10em -5em rgb(204, 0, 204), inset -5em -5em 2em -5em red, inset -5em -5em 10em -5em rgb(204, 0, 204);
+	/************************************************************************/
+	/*box-shadow: inset 0 -2em 2em red, inset 0 -10em 10em rgb(204, 0, 204);*/
+	/************************************************************************/
+	color: rgb(194, 153, 255);
+}
+
+.neon-info-text {
+	text-shadow: 0 0 1em gold, 0 0 0.5em red, 0 0 0.5em red, 0 0 1em gold;
+	color: rgba(0, 0, 77, 0.6);
+}
+
+.neon-text-link {
+	text-shadow: 0 0 1em red, 0 0 1em red, 0 0 1em red;
+	color: rgb(194, 153, 255);
+}
+
+.neon-text-link:hover {
+	color: rgb(204, 122, 0);
+}
+
+.neon-slider {
+	box-shadow: inset 0 0 2em rgb(194, 153, 255), 0 0 1em red;
+}
+
+.neon-slider:before {
+	box-shadow: inset 0 0 0.5em black, inset 0 0 1em black, 0 0 0.5em red;
+}
+
+.neon-navi-box {
+	background: rgba(209, 179, 255, 0.15);
+}
+
+.neon-navi-box:hover {
+	background: rgba(61, 0, 153, 0.3);
+}
+
+.neon-dropdown-menu {
+	border-bottom: 5px solid rgba(61, 0, 153, 0.3);
+}
