@@ -7,24 +7,39 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="neon-style.css">
+	<script src="themeswitcher.js"></script>
 </head>
 <body>
-
+		
 	<header>
 		<nav class="main-nav">
 			<ul class="navbar">
 				<li><a class="nav-item-main" href="https://github.com/Lamiaroid">Github</a></li>
+				<li>
+					<span class="theme-text">Neon Theme</span>
+					<label class="switch">
+  						<input class="neon-theme-switcher" type="checkbox" onClick="switcherMainNeonClick()">
+  						<span class="slider round"></span>
+					</label>
+				</li>
 			</ul>
 		</nav>
 		<nav class="mobile-nav">
 			<span class="nav-title">Navigation</span>
-			
+			<span class="nav-theme-text">
+				Neon Theme
+				<label class="switch">
+  					<input class="neon-theme-switcher" type="checkbox" onClick="switcherMobileNeonClick()">
+  					<span class="slider round"></span>
+				</label>	
+			</span>
 			<div class="dropdown-menu">
 				<input type="checkbox" id="menu">
 				<label for="menu"><div class="nav-icon content-center"><img class="menu-img" src="art/menu.png"></div></label>
 				<div class ="menu-content">
 					<ul>
-						<li><a class="nav-item-main-no-anim" href="https://github.com/Lamiaroid">Github</a></li>					
+						<li><a class="nav-item-main-no-anim" href="https://github.com/Lamiaroid">Github</a></li>	
 					</ul>
 				</div>
 			</div>
@@ -32,10 +47,8 @@
 		</nav>		
 	</header>
 
-	
-
 	<div class="banner">
-		<h1>In Search Of Incredible!</h1>
+		<h1 class="banner-static">In Search Of Incredible!</h1>
 		<h3><a class="subtitle" href="https://github.com/Lamiaroid">(And it's me again)</a></h3>
 	</div>
 
@@ -45,7 +58,7 @@
 	</div>
 
 	<div class="container mobile-container">
-		<a class="item content-center" href="https://github.com/Lamiaroid"><img class="link-img mobile-img" src="art/link.png"></a>
+		<a class="item content-center item-link" href="https://github.com/Lamiaroid"><img class="link-img mobile-img" src="art/link.png"></a>
 		<div class="item img-container">
 			<img class="item-img" src="images/Miku.jpg">
 			<img class="item-img" src="images/Beat.jpg">
@@ -53,7 +66,7 @@
 	</div>
 	
 	<div class="text">
-		<h3>About me</h3>
+		<h3 class="info-text">About me</h3>
 		<div class="paragraphs">
 			<p>Hi there. I'm the 3-year student of BSUIR (Computer Systems and Networks).</p>
 			<p>Really interested in C#/.NET; PHP, C++/CLI, JavaScript also attract me (but much less).</p>
@@ -62,8 +75,8 @@
 		</div>
 	</div>
 
-	<div class="text">
-		<h3 align="center">Links</h3>
+	<div class="text-linker">
+		<h3 align="center" class="info-text">Links</h3>
 		<div class="paragraphs links">
 			<ul>
 				<li><p><a class="nav-item" href="https://github.com/Lamiaroid/PadawansTask1">PadawansTask1</a></p></li>
