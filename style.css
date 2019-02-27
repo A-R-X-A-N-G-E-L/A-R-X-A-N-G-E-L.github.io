@@ -174,7 +174,6 @@ ul.navbar li {
 	padding: 80px;
 	padding-top: 40px;
 	padding-bottom: 60px;
-	background-color: #ebebeb;
 	margin: 0px;
 }
 
@@ -294,6 +293,41 @@ input:checked ~ .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+canvas {
+	display: block;
+}
+
+.secret-bg,
+.secret-light {
+	background: #ebebeb;
+}
+
+.paragraphs,
+.info-text {
+	position: relative;
+	z-index: 100;
+}
+
+#matrix-canvas,
+.secret-bg,
+.secret-light {
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+}
+
+.secret-light,
+.secret-bg,
+#matrix-canvas {
+	width: 100%;
+	height: 100%;
+}
+
+.text-linker {
+	position: relative;
+	margin: 0px;	
 }
 
 @keyframes disappearing {
