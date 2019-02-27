@@ -47,7 +47,7 @@ function changeStyleNeon() {
 	let dropdownMenu = document.getElementsByClassName('dropdown-menu');
 
 	let banner = document.getElementsByClassName('banner');
-	let bannerLink = document.getElementsByClassName('subtitle');
+	let bannerLink = document.getElementsByClassName('banner-below');
 	let bannerStatic = document.getElementsByClassName('banner-static');
 
 	let subbaner = document.getElementsByClassName('subbanner');
