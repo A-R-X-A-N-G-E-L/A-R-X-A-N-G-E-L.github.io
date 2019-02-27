@@ -1,11 +1,11 @@
 @font-face {
-    font-family: Montserrat-Regular;
-    src: url(fonts/Montserrat-Regular.otf);
+   	font-family: 'Neon';
+    src: url('font/Polentical Neon Regular.ttf');
 }
 
 body {
 	margin: 0px;
-	font-family: "Montserrat-Regular", sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -500,14 +500,13 @@ canvas {
 
 	.switch {
   		top: 15px;
-  		width: 0px;
+  		width: 1em;
   		height: 12px;
-  		padding-left: 12px;
 	}
 
 	.slider {
 		top: 2px;
-  		left: -5em;
+  		left: -4.5em;
   		right: 3em;
 	}
 
@@ -519,7 +518,11 @@ canvas {
 	}
 
 	input:checked ~ .slider:before {
-  		transform: translateX(24.5px);
+  		transform: translateX(3.1em);
+	}
+
+	input:checked ~ .slider {
+  		left: -6em;
 	}
 
 	.nav-theme-text {
@@ -640,7 +643,7 @@ canvas {
 
 	.slider {
 		top: 2px;
-  		left: -5em;
+  		left: -4.5em;
 	}
 
 	.slider:before {
@@ -652,7 +655,7 @@ canvas {
 	}
 
 	input:checked ~ .slider:before {
-  		transform: translateX(20px);
+  		transform: translateX(3.5em);
 	}
 
 	.nav-theme-text {
