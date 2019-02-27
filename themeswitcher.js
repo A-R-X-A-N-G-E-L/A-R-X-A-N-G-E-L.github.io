@@ -61,6 +61,9 @@ function changeStyleNeon() {
 	let secretLight = document.getElementsByClassName('secret-light');
 	let secretBG = document.getElementsByClassName('secret-bg');
 
+	let ilassa = document.getElementsByClassName('ilassa');
+	let cheshiria = document.getElementsByClassName('cheshiria');
+
 	changeMe(header, 'neon-header');
 	changeMe(headerLink, 'neon-header-link');
 	changeMe(headerStatic, 'neon-header-static');
@@ -82,6 +85,8 @@ function changeStyleNeon() {
 	changeMe(textLink, 'neon-text-link', textLink.length);
 	changeMe(secretLight, 'neon-secret-light');
 	changeMe(secretBG, 'neon-secret-bg');
+	changeMe(ilassa, 'neon-ilassa');
+	changeMe(cheshiria, 'neon-cheshiria');
 }
 
 function changeMe(element, newStyle, objectsNumber = 1) {
