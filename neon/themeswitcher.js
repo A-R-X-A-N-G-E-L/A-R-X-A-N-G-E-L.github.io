@@ -64,6 +64,8 @@ function changeStyleNeon() {
 	let ilassa = document.getElementsByClassName('ilassa');
 	let cheshiria = document.getElementsByClassName('cheshiria');
 
+	let font = document.getElementsByTagName('body');
+
 	changeMe(header, 'neon-header');
 	changeMe(headerLink, 'neon-header-link');
 	changeMe(headerStatic, 'neon-header-static');
@@ -87,6 +89,7 @@ function changeStyleNeon() {
 	changeMe(secretBG, 'neon-secret-bg');
 	changeMe(ilassa, 'neon-ilassa');
 	changeMe(cheshiria, 'neon-cheshiria');
+	changeMe(font, 'neon-font');
 }
 
 function changeMe(element, newStyle, objectsNumber = 1) {
