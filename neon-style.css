@@ -109,3 +109,11 @@
 .neon-dropdown-menu {
 	border-bottom: 5px solid rgba(61, 0, 153, 0.3);
 }
+
+.neon-cheshiria {
+	z-index: 50;
+}
+
+.neon-ilassa {
+	z-index: 50;
+}
