@@ -1,9 +1,17 @@
+let matrixRainID;
+
 function switcherMainNeonClick() {
 	let switcher = document.getElementsByClassName("neon-theme-switcher");
 	if (switcher[0].checked) {
 		switcher[1].checked = true;
+		matrixRainID = setInterval(function() { matrixRain("rgba(0, 0, 0, 0.05)",
+							  						   	   "rgb(194, 153, 255)",
+							  						   	   1,
+							  						   	   "red",
+							  						   	   15);}, 33);
 	} else {
 		switcher[1].checked = false;
+		clearInterval(matrixRainID);
 	}
 
 	changeStyleNeon();
@@ -13,8 +21,14 @@ function switcherMobileNeonClick() {
 	let switcher = document.getElementsByClassName("neon-theme-switcher");
 	if (switcher[1].checked) {
 		switcher[0].checked = true;
+		matrixRainID = setInterval(function() { matrixRain("rgba(0, 0, 0, 0.05)",
+							  						   	   "rgb(194, 153, 255)",
+							  						   	   1,
+							  						   	   "red",
+							  						   	   15);}, 33);
 	} else {
 		switcher[0].checked = false;
+		clearInterval(matrixRainID);
 	}
 
 	changeStyleNeon();
@@ -44,6 +58,8 @@ function changeStyleNeon() {
 	let textAbout = document.getElementsByClassName('text-linker');
 	let infoText = document.getElementsByClassName('info-text');
 	let textLink = document.getElementsByClassName('nav-item');
+	let secretLight = document.getElementsByClassName('secret-light');
+	let secretBG = document.getElementsByClassName('secret-bg');
 
 	changeMe(header, 'neon-header');
 	changeMe(headerLink, 'neon-header-link');
@@ -64,6 +80,8 @@ function changeStyleNeon() {
 	changeMe(textAbout, 'neon-text-linker');
 	changeMe(infoText, 'neon-info-text', 2);
 	changeMe(textLink, 'neon-text-link', textLink.length);
+	changeMe(secretLight, 'neon-secret-light');
+	changeMe(secretBG, 'neon-secret-bg');
 }
 
 function changeMe(element, newStyle, objectsNumber = 1) {
