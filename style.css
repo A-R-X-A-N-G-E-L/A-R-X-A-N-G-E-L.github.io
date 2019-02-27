@@ -314,6 +314,24 @@ canvas {
  	top: 0;
 }
 
+.secret-light {
+	z-index: 75;
+}
+
+.cheshiria {
+	position: absolute;
+ 	right: 0;
+ 	top: 0;
+ 	z-index: 90;
+}
+
+.ilassa {
+	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ 	z-index: 90;
+}
+
 .secret-light,
 .secret-bg,
 #matrix-canvas {
@@ -348,6 +366,18 @@ canvas {
   100% { 
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (max-width: 1366px), only screen and (max-device-width: 1366px) {
+	.cheshiria {
+		width: 16em;
+		height: 25em;
+	}
+
+	.ilassa {
+		width: 16em;
+		height: 20em;
+	}
 }
 
 @media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
@@ -417,6 +447,16 @@ canvas {
 
 	input:checked ~ .slider:before {
   		transform: translateX(34px);
+	}
+
+	.cheshiria {
+		width: 9.5em;
+		height: 15em;
+	}
+
+	.ilassa {
+		width: 10em;
+		height: 12.5em;
 	}
 }
 
@@ -541,6 +581,16 @@ canvas {
 	.item .link-img:hover {
 		width: 40%;
 	}	
+
+	.cheshiria {
+		width: 7em;
+		height: 11em;
+	}
+
+	.ilassa {
+		width: 7em;
+		height: 9em;
+	}
 }
 
 @media only screen and (max-width: 360px), only screen and (max-device-width: 360px) {
@@ -664,4 +714,14 @@ canvas {
 	.item .link-img:hover {
 		width: 40%;
 	}	
+
+	.cheshiria {
+		width: 4em;
+		height: 6.5em;
+	}
+
+	.ilassa {
+		width: 4em;
+		height: 5em;
+	}
 }
