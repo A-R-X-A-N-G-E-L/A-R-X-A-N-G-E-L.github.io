@@ -86,11 +86,20 @@ function changeStyleNeon() {
 
 function changeMe(element, newStyle, objectsNumber = 1) {
 	let switcher = document.getElementsByClassName("neon-theme-switcher");
+	let linkImg = document.getElementsByClassName("link-img");
+	let menuImg = document.getElementsByClassName("menu-img");
 	if (switcher[0].checked || switcher[1].checked) {
+		linkImg[0].src = linkImg[0].src.replace(/\/link.png/, "\/neon-link.png");
+		linkImg[1].src = linkImg[1].src.replace(/\/link.png/, "\/neon-link.png");
+		menuImg[0].src = menuImg[0].src.replace(/\/menu.png/, "\/neon-menu.png");
 		for (let i = 0; i < objectsNumber; i++) {
 			element[i].className += ' ' + newStyle;
 		}
 	} else {	
+		linkImg[0].src = linkImg[0].src.replace(/\/neon-link.png/, "\/link.png");
+		linkImg[1].src = linkImg[1].src.replace(/\/neon-link.png/, "\/link.png");
+		menuImg[0].src = menuImg[0].src.replace(/\/neon-menu.png/, "\/menu.png");
+
 		let stylePattern = new RegExp('\\s' + newStyle + '$')
 		for (let i = 0; i < objectsNumber; i++) {
 			element[i].className = element[i].className.replace(stylePattern, '');
