@@ -5,9 +5,9 @@ let context = canvas.getContext("2d");
 //************************************************************************************************************************************************************************************************************************************************/
 let symbolSet = "九七二人入八力十下三千上口土夕大女子小山川五天中六円手文日月木水火犬王正出本右四左玉生田白目石立百年休先名字早気竹糸耳虫村男町花見貝赤足車学林空金雨青草音校森";
 let fontSize = 10;
-let randomFactor = 100;
+let randomFactor = 400;
 
-canvas.height = window.innerHeight;
+canvas.height = window.innerHeight * 4;
 canvas.width = window.innerWidth;
 
 let columns = canvas.width/fontSize; 

@@ -36,6 +36,11 @@ header {
 	padding-right: 0px;
 }
 
+.special-action1,
+.special-action2 {
+	transition: .4s;
+}
+
 .mobile-nav {
 	display: none;
 }
